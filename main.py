@@ -1,23 +1,23 @@
-recepte1 = {"cukurs":2.22, "kaneles":1.53, "aboli":5.22, "udens":0.50}
-cenas1 ={'cukurs':2.22, 'kaneles':1.53, 'aboli':5.22, 'udens':0.50}
+def pasuti_tkreklus(skaits, apdruka, pegade):
+  cenas = {"TEKSTS":5, "ZIME":7, "FOTO":20}
 
-def izmaksas_receptei(recepte,cenas):
+  apdruka_vert= cenas[apdruka]*skaits
 
- summa=0
- for sastavdala in recepte:
-  daudzums = recepte[sastavdala]
-  summa += daudzums* cenas[sastavdala]
+while piegade:
+  if apdruka_vert < 50:
+    return apdruka_vert + 15
+  
+  elif apdruka_vert > 100:
+    return apdruka_vert * 0.05
+  
+  else:
+    return apdruka_vert
 
- return summa   
+else:
+  return apdruka_vert * 0.05
 
 
 
-def izmaksas_receptei(abolu_svars, recepte, cena):
-  izmaksas_kg=izmaksas_receptei(recepte, cenas)
-  /recepte['aboli']
 
-  ievarijuma_izmaksas= abolu_svars+ izmaksas_kg
 
-  return ievarijuma_izmaksas
-
-  print(izmaksas_kopa(15.0, recepte1, cenas1))
+pasuti_tkreklus(6, "TEKSTS", False)
